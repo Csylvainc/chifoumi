@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>Chifoumi</title>
+</head>
+<body>
+    <h1>Chifoumi</h1>
+    <main class="row">
+    <section class="col-md-4">
+        <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#classic" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Version clasic
+        </a>
+        
+      </p>
+      <div class="collapse" id="classic">
+        <div class="card card-body">
+          <h2>Vous allez jouer à la version "classic" de CHIFOUMI.</h2>
+          <p>Voici les règles</p>
+            <ul>
+                <li>Le ciseau est écrasé par la pierre.</li>
+                <li>La feuille est découpée par le ciseau.</li>
+                <li>La pierre est enveloppée par la feuille.</li>
+                <li>Si vous et l'ordinateur faites le même choix il y a une égalité.</li>
+            </ul>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Choisissez votre arme
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="pcClassic">
+                  <li><a class="dropdown-item" href="#" id="pierreClassique" onclick="recupId(this.id)">Pierre</a></li>
+                  <li><a class="dropdown-item" href="#" id="feuilleClassique" onclick="recupId(this.id)">Feuille</a></li>
+                  <li><a class="dropdown-item" href="#" id="ciseauxClassique" onclick="recupId(this.id)">Ciseaux</a></li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </section>
+      <!-- Fin version classic -->
+    
+
+    <section class="col-md-4">
+      <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#big" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Version big Bang Theory
+        </a>
+        
+      </p>
+      <div class="collapse" id="big">
+        <div class="card card-body">
+            <h2>Vous allez jouer à la version "Big Bang Theory" de CHIFOUMI.</h2>
+          <p>Bon courage pour comprendre les règles personnellement ja n'arrive pas à les retenir, n'hésitez pas à regarder la video une centaine de fois!!!</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/llq528pnv9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="bigBang"></iframe>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle mt-5" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              Choisissez votre arme
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="pcClassic">
+              <li><a class="dropdown-item" href="#" id="pierreBig" onclick="recupId(this.id)">Pierre</a></li>
+              <li><a class="dropdown-item" href="#" id="feuilleBig" onclick="recupId(this.id)">Feuille</a></li>
+              <li><a class="dropdown-item" href="#" id="ciseauxBig" onclick="recupId(this.id)">Ciseaux</a></li>
+              <li><a class="dropdown-item" href="#" id="lezardBig" onclick="recupId(this.id)">Lézard</a></li>
+              <li><a class="dropdown-item" href="#" id="spockBig" onclick="recupId(this.id)">Spock</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- Fin version big bang -->
+      <section class="col-md-4">
+      <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#orel" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Version Puit
+        </a>
+        
+      </p>
+      <div class="collapse" id="orel">
+        <div class="card card-body">
+        <h2>Vous allez jouer à la version "Puit" de CHIFOUMI.</h2>  
+        <p>Il à raison Orel, c'est quoi cette variante WTF !!!!</p>
+        <p><mark>Attention j'ai modifier une règle :</mark></p><p> La feuille tombe aussi dans le puit (Vous avez déjà vu une feuille recouvrir un puit vous?)</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IaBgasSC8n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="puit"></iframe>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle mt-5" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+              Choisissez votre arme
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="pcClassic">
+              <li><a class="dropdown-item" href="#" id="pierrePfcp" onclick="recupId2(this.id)">Pierre</a></li>
+              <li><a class="dropdown-item" href="#" id="feuillePfcp" onclick="recupId2(this.id)">Feuille</a></li>
+              <li><a class="dropdown-item" href="#" id="ciseauxPfcp" onclick="recupId2(this.id)">Ciseaux</a></li>
+              <li><a class="dropdown-item" href="#" id="puitPfcp" onclick="recupId2(this.id)">Puit</a></li>
+        </div>
+      </div>
+    </section>
+      <!-- Fin version Puit -->
+    </main>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./chifoumi.js"></script>
+</body>
+</html>
